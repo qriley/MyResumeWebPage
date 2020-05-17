@@ -1,0 +1,125 @@
+
+	<!DOCTYPE html>
+	<html>
+
+	  <head>
+			<link rel="stylesheet" type="text/css" href="styles1.css">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	  </head>
+	  <body>
+	    <div id="myHeader">
+
+	      <div>
+
+					<ul class="header">
+						<li>Quinn Riley</li>
+	          <li class="headerLinks"><a href="./home.html">Home</a></li>
+	          <li class="headerLinks"><a href="./skills.html">Skills</a></li>
+	          <li class="headerLinks"><a href="./projects.html">Projects</a></li>
+	          <li class="headerLinks"><a href="./resume.html">Resume</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	    <div class="mainContent">
+		
+		<div class="tiles red">
+			<div class="innerTile">
+				One project I found interesting was programming Anki Overdrive RC Cars.
+				<br/>We created an algorithm to make these cars detect one another at a stop sign and stop to avoid collisions.
+				<br/>
+				<br/>
+				<button class="github githubHover" onclick="location.href='https://github.com/qriley/anki-drive-java'" type="button"><h2 class="gitMargin">Anki Overdrive</h2></button>
+				
+			</div>
+		</div>
+		<div class="tiles gold">
+			<div class="innerTile">
+				I have also worked on a project to take three photos of Lake Ontario on a set interval, and stitch those image into one continous panarama.
+				<br/>
+				<br/>
+				We then took all these panaramas, and created a timelapse from them.
+				<br/>
+				<br/>
+				This was done using the Open CV API with our code, and Raspberry Pi 2's with camera attachments.
+				<br/>
+				<br/>
+				Unfortunately the code cannot be made public, as it was done in conjunction with the meteroligy department at SUNY Oswego.
+			</div>
+		</div>
+		<div class="tiles blue">
+			<div class="innerTile">
+				I have also worked on the SmartTron team, whose goal it was to create our own, better Scantron system.
+				<br />
+				We used Open CV to detect how students filled out the test sheets and allowed our teachers to connect to the system and scan the tests in using normal scanners.
+				<br />
+				I primarily worked as a QA specilist whose goal it was to detect bugs and document them in our Quality Management Report.
+				<br />
+				I also created custom Selenium testing scripts which would autonomously check each page for defects. These tests could check the whole website for issues in under 2 minutes.
+				<br /> View it below: <br />
+				
+				<button class="github githubHover" onclick="location.href='https://github.com/csc480-19s/SMARTron/blob/master/src/test/Selenium/SeleniumProject/SelProject/src/automation/main.java'" type="button"><h2 class="gitMargin">SMARTron</h2></button>
+				
+			</div>
+		</div>
+		<div class="tiles green">
+			<div class="innerTile">
+				I have also worked on a number of projects with Cap Com FCU.
+				<br/>
+				<br/>
+				I have worked with the EpiServer API, to help build a website that is easily changable for skateholders without actually changing any code. This project was made in a MVC framework using C# as the backend code, and CSHTML as the front end code.
+				<br/>
+				<br/>
+				Also created an internal website used for School Banking staff. This webpage allowed the school banking staff to access records of all users as well as update the data when new changes and transactions were made.
+				<br/>
+				We used React JS and C# to build this whole system, with more then 30 pages on this site. I also used Selenium to create automated tests to find defects in the code.
+				<br/>
+				<br/>
+				Unfortunately the code cannot be made public, as I had worked on it under the employment of Cap Com FCU and have no right to distribute said code.
+			</div>
+		</div>		
+		</div>
+	      <div class="bottomTextContainer">
+	        <div class="bottomText">
+				<p> 
+					During the course of these projects, I learned a variety of useful libraries and tools; Including the Selenium WebDriver API, React Js, as well as Open CV deep learning, and Virtual Neural networks. On the side, I enjoy making random webpages, and even working on small games.
+					<br />
+					I also created a fun name generator thing, click below!
+					<br />
+					<button id="changeMe" class="github githubHover" onclick=nameGen(); type="button"><h2 class="gitMargin">Click!</h2></button>
+				</p>
+					<script>
+					function nameGen(){
+						var firstNames = ["Swaggy","Clever","Sly","Slick","Sneaky","Crazy","Muscular","Strong","Free","Wise","Young","Humble","Awesome","Thick","Swift","Masterful","Unbelievable","Beastly","Firery","Reliable","Wholesome","Godly","Bellowing","Lil","Inspirational","Genius","Unstoppable","Scary","Perfect"];
+						var lastNames = ["Super Man","Witch","Wizard","Professor","Mentor","Mad Man","Killer","Fist","Fighter","Joker","Einstein","Thug","Lad","Mastermind","Hawk","Coder","Spirit","Dragon","Artist","Mastermind","Gamer","Magician","Vader","Ass","Music Man","Eagle","Fighter","Man","Woman","Godzilla"];
+
+						var rand1 = Math.floor(Math.random()*firstNames.length);
+						var rand2 = Math.floor(Math.random()*lastNames.length);
+						
+						console.log(rand1 + " - "+ rand2);
+						document.getElementById("changeMe").innerHTML = firstNames[rand1] +" "+lastNames[rand2];
+					}
+					</script>
+				<p> 
+					<br />
+					My full GitHub page can be seen below:
+					<br />
+				</p>
+							<button class="github githubHover" onclick="location.href='https://github.com/qriley'" type="button"><h2 class="gitMargin">My GitHub</h2></button>
+				<p> 
+					<br />
+					View my progress working with HTML CSS and Java Script Below:
+					<br />
+				</p>
+							<button class="github githubHover" onclick="location.href='http://cs.oswego.edu/~qriley/coursework/ISC250/'" type="button"><h2 class="gitMargin">ISC 250 Work</h2></button>
+
+	        </div>
+
+	      </div>
+
+	    </div>
+	    <footer>
+	      <p>COPYRIGHT QUINN RILEY</p>
+	    </footer>
+	  </body>
+
+	</html>
